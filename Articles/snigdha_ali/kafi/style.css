@@ -1,0 +1,48 @@
+
+/* nbc4.com styles */
+
+/* --- Begin national css styles --- */
+#videoteaser {
+  height:100px;
+  overflow:auto;
+}
+.videoplayer { position: absolute; top: 0px; left: 0px; width: 240px; height: 180px; }
+#playerparent { position: relative; width: 240px; height: 208px; }
+#playerparent img { position: absolute; top: 0px; left: 0px; }
+#controlsparent { position: absolute; top: 180px; left: 0px; height: 28px; width:100%; background-color: black; }
+.controls {
+	position: absolute;
+	top: 6px;
+	left: 2px;
+	width: 18px;
+	height: 14px;
+	z-index: 2;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.play { background-image: url('http://images.ibsys.com/orl-structure/images/structures/buttons/button_video_play.gif'); }
+.stop { background-image: url('http://images.ibsys.com/orl-structure/images/structures/buttons/button_video_stop.gif'); }
+.pause { background-image: url('http://images.ibsys.com/orl-structure/images/structures/buttons/button_video_pause.gif'); }
+.fastReverse { background-image: url('http://images.ibsys.com/orl-structure/images/structures/buttons/button_video_seek_backward.gif');}
+.fastForward { background-image: url('http://images.ibsys.com/orl-structure/images/structures/buttons/button_video_seekforward.gif'); }
+.progressbar { position: absolute; left: 90px; top: 6px; height: 14px; width: 100px; background-color: white; z-index: 1; }
+#fill {  position: absolute; width: 1px; height: 14px; top: 0px; left: 0px; background-color: #E5AF33; z-index: 3; }
+
+#buffering {
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+}
+/* --- End national_css styles --- */
+
+
+
+/*
+Date: 14:07:18 EDT
+XSL File: site-css.xsl
+Browser Type: 
+Page Type: style
+Section Site: natl
+*/

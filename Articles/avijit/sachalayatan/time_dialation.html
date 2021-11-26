@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>For v = c</title>
+</head>
+
+<body>
+
+<table height="370" cellSpacing="2" cellPadding="2" width="580" border="1" id="table1">
+	<tr>
+		<td width="514" height="309"><center><img src="tdil1.gif" width="502" height="236"></center>
+<SCRIPT language=JavaScript>
+function tcal(){fh=document.forms[1];vv=fh.v1.value;fh.t.value=Math.sqrt(1/(1-vv*vv))}
+function v1cal(){fh=document.forms[1];tt=fh.t.value;fh.v1.value=Math.sqrt((tt*tt-1)/(tt*tt))}
+</SCRIPT>
+
+		<form>
+			<center>
+			<table id="table2">
+				<tr>
+					<td>For v =
+					<input onchange="tcal()" size="6" value=".5" name="v1">c, T 
+					=<input onchange="v1cal()" size="6" value="1.1547005383792514" name="t"> 
+					T<sub>0</sub></td>
+				</tr>
+			</table>
+			</center>
+		</form>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

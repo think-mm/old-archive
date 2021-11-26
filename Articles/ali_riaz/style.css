@@ -1,0 +1,82 @@
+td {
+	text-align: left;
+	vertical-align: top;
+	font-family:Verdana;
+	font-size:10px;
+	color:#7A7A7A;
+}
+td.mid {
+	text-align: center;
+	vertical-align: middle;
+	font-family:Verdana;
+	font-size:10px;
+	font-weight:bold;
+	color:#7A7A7A;
+}
+form
+{
+	margin:0px;
+}
+a {
+
+	text-decoration: underline;
+	color:#4A7995;
+}
+.red
+{
+	color:#B45C5C;
+}
+.d
+{
+	color:#636363;
+}
+a.vd
+{
+	color:#404040;
+	text-decoration:underline;
+}
+.vd
+{
+	color:#404040;
+}
+a.gn
+{
+	color:#7A7A7A;
+	text-decoration:none;
+}
+a.g
+{
+	color:#7A7A7A;
+	text-decoration:underline;
+}
+.w
+{
+	color:#FFFFFF;
+}
+a.w
+{
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+.menu
+{
+	color:#666666;
+}
+a.menu
+{
+	color:#666666;
+	text-decoration:none;
+}
+a.copy
+{
+	color:#ADADAD;
+	text-decoration:none;
+}
+.v13
+{
+font-size:13px;
+}
+.v11
+{
+font-size:11px;
+}
