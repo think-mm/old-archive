@@ -1,0 +1,117 @@
+<HTML> <HEAD> <TITLE>Free JavaScript (CountDown, JavaClock, CookieCounter, and EmailEncryptor)</TITLE>
+<META NAME="KEYWORDS" CONTENT="java script, count down, clock, counter, Jim Tucek, y2k, year 2000, millennium">
+<META NAME="DESCRIPTION" CONTENT="These are my four best JavaScript examples.  Do you know how long until Y2K goes 'Sput!'?  More to come.">
+</HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+// <!-- Quick! Hide the java!
+
+// Speaking of Java, this particular script is (C) Copyright 2002 Jim Tucek
+// If you wish to use my JavaClock script, these comments must be left
+// alone!  That is all.
+
+// Visit www.jracademy.com/~jtucek/ for script information and a bit of help
+// setting it up, or www.jracademy.com/~jtucek/email.html for contact
+// information.
+
+function javaclock() {
+
+var Military = "no"
+var now = new Date()
+H = now.getHours()
+M = now.getMinutes()
+S = now.getSeconds()
+
+if (Military == "no") { document.images.b7.src = "gif/am.gif";
+  if (H > 11) { document.images.b7.src = "gif/pm.gif" };
+  if (H > 12) { H = H-12 } };
+
+
+if (H <= 9) { document.images.b1.src = "gif/blank.gif"; document.images.b2.src =  "gif/" + H + ".gif" }
+if (H > 9) { var r=0; 
+  while (H > 9) { r++; H = H-10 };
+  document.images.b1.src = "gif/" + r + ".gif"; 
+  document.images.b2.src = "gif/" + H + ".gif" }
+if (H == 0) { document.images.b1.src = "gif/1.gif"; document.images.b2.src =  "gif/2.gif" };
+
+if (M <= 9) { document.images.b3.src = "gif/0.gif"; document.images.b4.src = "gif/" + M + ".gif" }
+if (M > 9) { var r=0; 
+while (M > 9) { r++; M = M-10 }; 
+document.images.b3.src = "gif/" + r + ".gif"; 
+document.images.b4.src = "gif/" + M + ".gif" }
+
+// *Start commenting out these lines to remove seconds
+if (S <=9) { document.images.b5.src = "gif/0.gif"; document.images.b6.src = "gif/" + S + ".gif" }
+if (S > 9) { var r=0; 
+while (S > 9) { r++; S = S-10 }; 
+document.images.b5.src = "gif/" + r + ".gif"; 
+document.images.b6.src = "gif/" + S + ".gif" }
+// *Stop commenting out
+
+setTimeout("javaclock()",1000);
+}
+
+// --></SCRIPT><SCRIPT LANGUAGE="JAVASCRIPT">
+// <!-- Quick! Hide the java!
+
+// Speaking of Java, this particular script is (C) Copyright 2002 Jim Tucek
+// If you wish to use my CountDown script, these comments must be left
+// alone!  That is all.
+
+// Visit www.jracademy.com/~jtucek/ for script information and a bit of help
+// setting it up, or www.jracademy.com/~jtucek/email.html for contact
+// information.
+
+function start() {
+setup(document.forms["form1"].time2.value,"form1");
+repeat();
+}
+
+function repeat() 
+{
+down("form1");
+setTimeout("repeat()",1000);
+}
+
+function setup(day,box)
+{
+today = (new Date()).getTime();
+the_day = (new Date(day)).getTime();
+time = (the_day - today);
+document.forms[box].time2.value=time;
+}
+
+function down(box)
+{
+document.forms[box].time2.value = document.forms[box].time2.value - 1000;
+time = document.forms[box].time2.value;
+days = (time - (time % 86400000)) / 86400000;
+time = time - (days * 86400000);
+hours = (time - (time % 3600000)) / 3600000;
+time = time - (hours * 3600000);
+mins = (time - (time % 60000)) / 60000;
+time = time - (mins * 60000);
+secs = (time - (time % 1000)) / 1000;
+if(days==1) out = "1 day, ";
+else out = days+" days, ";
+if(hours<10) out = out+"0";
+out = out+hours+" hr:";
+if(mins<10) out = out+"0";
+out = out+mins+" min:";
+if(secs<10) out = out+"0";
+out = out+secs + " sec";
+if(days+hours+mins+secs>1) document.forms[box].time.value = out;
+else document.forms[box].time.value = ("It's here!");
+}
+// I'm back! -->
+</SCRIPT>
+
+
+<BODY >
+<FORM name="form1">
+<input type="hidden" name="time2" size="0" value="February 12, 2006">
+<input type="text" name="time" size="25" value=" "> is left before Darwin day !</FORM>
+
+<SCRIPT>
+start();
+</SCRIPT>
+</BODY></HTML>

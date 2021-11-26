@@ -1,0 +1,15 @@
+.headline {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 12px; font-weight: bold; line-height: normal; color: #000000}
+.banner {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF}
+.main_text {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 20px}
+.plaque {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000}
+.gallery {  filter: DropShadow(Color=#444444, OffX=5, OffY=5, Positive=1)}
+.india_gallery {  filter: DropShadow(Color=#44123B, OffX=4, OffY=6, Positive=1)}
+.canada_gallery {  filter: DropShadow(Color=#AAAAAA, OffX=4, OffY=4, Positive=1)}
+.maroc_gallery {  filter: DropShadow(Color=#AA8D58, OffX=4, OffY=4, Positive=1)}
+.main_gallery {  filter: DropShadow(Color=#444444, OffX=4, OffY=4, Positive=1)}
+.gallerytitle {  font-family: Garamond, Times New Roman, Times, sans-serif; font-size: 36px; font-weight: bold; color: #FFFFFF}
+.chiletext {  font-family: "Georgia", "Times New Roman", "Verdana", "serif"; font-size: 13px; font-style: normal; line-height: 26px; font-weight: normal; color: #000000}
+.chiletext2 {  font-family: "Georgia", "Times New Roman", "Verdana", "serif"; font-size: 10px; font-style: normal; line-height: 15px; font-weight: normal; color: #000000}
+A:link {text-decoration: none;}
+A:visited {text-decoration: none;}
+A:hover {text-decoration: color= #0000ff; background= #888888;}

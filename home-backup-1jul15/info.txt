@@ -1,0 +1,15 @@
+
+# Contact info submission
+
+url: mukto-mona.com/
+site_owner: Avijit Roy
+address1: 
+address2: 
+city: 
+state: Unlisted
+country: Unlisted
+postal_code: Unlisted
+phone_number: Unlisted
+display_email: charbak_bd@yahoo.com
+site_name: Mukto-mona
+site_description: We encourage freethinking, humanism and rationalism among our members. Mukto-mona Forum is for debate/discussion on religion, politics, philosophy, history, feminism, art and literature. We wish to offer here a friendly atmosphere free from personal attac

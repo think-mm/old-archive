@@ -1,0 +1,6 @@
+User-agent: *
+Crawl-delay: 3700
+User-Agent: bingbot
+Disallow: /
+User-agent: msnbot
+Disallow: /
